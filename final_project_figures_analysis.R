@@ -1,4 +1,4 @@
-setwd("C:/Users/runha/OneDrive - University of Illinois - Urbana/Documents/MSPS/Psyc593DS/final_paper")
+setwd("C:/Users/runha/OneDrive - University of Illinois - Urbana/Documents/MSPS/Psyc593DS")
 mydata = read.csv("Appendix II.csv")
 mydata$PVI = with(mydata, ifelse(item_reported == 999,0,1))
 mydata$condition = factor(mydata$condition,levels=c("congruent","incongruent","control"))
